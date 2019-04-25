@@ -1,6 +1,5 @@
 package com.wjn.viewlistdemo.activity.viewpagerfragment;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -10,61 +9,52 @@ import android.view.ViewGroup;
 
 import com.wjn.viewlistdemo.R;
 
-public class MyFragment2 extends Fragment{
+public class MyFragment2 extends Fragment {
 
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        Log.d("TAG","MyFragment2执行onAttach方法");
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        Log.d("TAG","MyFragment2执行onCreate方法");
-    }
+    private boolean isViewCreated;//Fragment的View加载完毕的标记
+    private boolean isUIVisible;//Fragment对用户可见的标记
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_content2, container, false);
-        Log.d("TAG","MyFragment2执行onCreateView方法");
+        isViewCreated = true;
         return view;
     }
 
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        Log.d("TAG","MyFragment2执行onActivityCreated方法");
-    }
+    /**
+     * setUserVisibleHint 此页面用户是否可见
+     */
 
     @Override
-    public void onPause() {
-        super.onPause();
-        Log.d("TAG","MyFragment2执行onPause方法");
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (isVisibleToUser) {
+            isUIVisible = true;
+            loadData();
+        } else {
+            isUIVisible = false;
+        }
     }
 
-    @Override
-    public void onStop() {
-        super.onStop();
-        Log.d("TAG","MyFragment2执行onStop方法");
+    /**
+     * 模仿加载数据
+     */
+
+    private void loadData() {
+        if (isViewCreated && isUIVisible) {
+            Log.d("TAG", "MyFragment2加载数据！！！");
+            isViewCreated = false;
+            isUIVisible = false;
+        }else{
+            Log.d("TAG", "MyFragment2虽然显示UI当不可以加载数据！！！");
+        }
     }
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        Log.d("TAG","MyFragment2执行onDestroyView方法");
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        Log.d("TAG","MyFragment2执行onDestroy方法");
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        Log.d("TAG","MyFragment2执行onDetach方法");
+        isViewCreated = false;
+        isUIVisible = false;
     }
 
 }

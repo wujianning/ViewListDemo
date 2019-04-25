@@ -25,19 +25,6 @@ public class MyFragment1 extends Fragment {
     private MyRecycleViewAdapter adapter;
     private List<Student> list;
 
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        Log.d("TAG","MyFragment1执行onAttach方法");
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        Log.d("TAG","MyFragment1执行onCreate方法");
-    }
-
     /**
      * onCreateView方法
      */
@@ -46,14 +33,7 @@ public class MyFragment1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_content1, container, false);
         initView(view);//初始化View
-        Log.d("TAG","MyFragment1执行onCreateView方法");
         return view;
-    }
-
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        Log.d("TAG","MyFragment1执行onActivityCreated方法");
     }
 
     /**
@@ -109,35 +89,8 @@ public class MyFragment1 extends Fragment {
         recyclerView.setHasFixedSize(true);
         adapter = new MyRecycleViewAdapter(getActivity(), list);
         recyclerView.setAdapter(adapter);
+
+        Log.d("TAG","MyFragment1加载数据！！！");
     }
 
-    @Override
-    public void onPause() {
-        super.onPause();
-        Log.d("TAG","MyFragment1执行onPause方法");
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-        Log.d("TAG","MyFragment1执行onStop方法");
-    }
-
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        Log.d("TAG","MyFragment1执行onDestroyView方法");
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        Log.d("TAG","MyFragment1执行onDestroy方法");
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        Log.d("TAG","MyFragment1执行onDetach方法");
-    }
 }
