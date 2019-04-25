@@ -73,7 +73,7 @@
                 android:layout_height="70dp"
                 android:background="@color/colorPrimary"
                 android:layout_margin="10dp"
-                android:text="ViewPager2+TabLayout"
+                android:text="ViewPager+Fragment"
                 android:textColor="#FFFFFF"
                 android:gravity="center"/>
 

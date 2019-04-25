@@ -11,6 +11,7 @@ import com.wjn.viewlistdemo.activity.recyclerview.RecyclerViewActivity;
 import com.wjn.viewlistdemo.activity.tablayout.TabLayoutActivity;
 import com.wjn.viewlistdemo.activity.textview.TextViewActivity;
 import com.wjn.viewlistdemo.activity.textview.TextViewMaxActivity;
+import com.wjn.viewlistdemo.activity.viewpagerfragment.MainVFActivity;
 import com.wjn.viewlistdemo.activity.viewpagertablayout.ViewPagerTabLayoutActivity;
 import com.wjn.viewlistdemo.utils.StatusBarUtil;
 
@@ -59,6 +60,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //ViewPager+Fragment
+        TextView textView3 = findViewById(R.id.activity_main_textview3);
+        textView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainVFActivity.class);
                 startActivity(intent);
             }
         });

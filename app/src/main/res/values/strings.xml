@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ViewListDemo</string>
+
+    <string name="tab_textview1">首页</string>
+    <string name="tab_textview2">通讯录</string>
+    <string name="tab_textview3">消息</string>
+    <string name="tab_textview4">个人</string>
+
 </resources>

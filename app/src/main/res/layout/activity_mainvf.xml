@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.wjn.viewlistdemo.activity.viewpagerfragment.ViewPagerSlide
+        android:id="@+id/activity_main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_main_bottomview"/>
+
+    <View
+        android:id="@+id/activity_main_bottomview"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/activity_main_radiogroup"
+        android:background="#CCCCCC" />
+
+    <RadioGroup
+        android:id="@+id/activity_main_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/activity_main_channel1"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_channel1"
+            android:text="@string/tab_textview1" />
+
+        <RadioButton
+            android:id="@+id/activity_main_channel2"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_channel2"
+            android:text="@string/tab_textview2" />
+
+        <RadioButton
+            android:id="@+id/activity_main_channel3"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_channel3"
+            android:text="@string/tab_textview3" />
+
+        <RadioButton
+            android:id="@+id/activity_main_channel4"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_channel4"
+            android:text="@string/tab_textview4" />
+
+    </RadioGroup>
+
+</RelativeLayout>
