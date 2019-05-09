@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="TextView仿支付宝滚动效果"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/activity_textviewrolling_swiperefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@color/colorPrimary">
+
+                <com.wjn.viewlistdemo.activity.textview.NumberRunningTextView
+                    android:id="@+id/activity_textviewrolling_textview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="0.00"
+                    android:textColor="#fff"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:runWhenChange="false" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@color/colorAccent">
+
+                <com.wjn.viewlistdemo.activity.textview.NumberRunningTextView
+                    android:id="@+id/activity_textviewrolling_textview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="总收益(元)"
+                    android:textColor="#fff"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:runWhenChange="false" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>
