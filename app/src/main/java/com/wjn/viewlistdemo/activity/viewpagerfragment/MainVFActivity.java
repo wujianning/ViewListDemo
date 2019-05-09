@@ -51,7 +51,7 @@ public class MainVFActivity extends AppCompatActivity implements RadioGroup.OnCh
         viewPager.setCurrentItem(0);
         viewPager.addOnPageChangeListener(this);
         viewPager.setOffscreenPageLimit(4);//左右缓存各4个Fragment的View
-        viewPager.setScanScroll(false);
+        viewPager.setScanScroll(false);//不可滑动
         radioGroup.setOnCheckedChangeListener(this);
         radioButton1.setChecked(true);//默认首页选中
     }

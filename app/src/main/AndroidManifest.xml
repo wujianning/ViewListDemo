@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".activity.viewpagerfragment.MainVFActivity"></activity>
         <activity android:name=".activity.recyclerview.RecyclerViewActivity" />
+        <activity android:name=".activity.textview.TextViewRollingActivity" />
         <activity android:name=".activity.textview.TextViewMaxActivity" />
         <activity android:name=".activity.textview.TextViewActivity" />
         <activity android:name=".activity.tablayout.TabLayoutActivity" />

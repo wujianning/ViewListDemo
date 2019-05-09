@@ -11,6 +11,7 @@ import com.wjn.viewlistdemo.activity.recyclerview.RecyclerViewActivity;
 import com.wjn.viewlistdemo.activity.tablayout.TabLayoutActivity;
 import com.wjn.viewlistdemo.activity.textview.TextViewActivity;
 import com.wjn.viewlistdemo.activity.textview.TextViewMaxActivity;
+import com.wjn.viewlistdemo.activity.textview.TextViewRollingActivity;
 import com.wjn.viewlistdemo.activity.viewpagerfragment.MainVFActivity;
 import com.wjn.viewlistdemo.activity.viewpagertablayout.ViewPagerTabLayoutActivity;
 import com.wjn.viewlistdemo.utils.StatusBarUtil;
@@ -40,6 +41,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, TextViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //TextView仿支付宝滚动效果
+        TextView textView000 = findViewById(R.id.activity_main_textview000);
+        textView000.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TextViewRollingActivity.class);
                 startActivity(intent);
             }
         });
