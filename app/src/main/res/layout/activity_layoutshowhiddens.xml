@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="布局显示隐藏动画2"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- 淡入淡出动画按钮直接调用Activity定义的alpha()方法 -->
+    <Button
+        android:id="@+id/btnAlpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="22dp"
+        android:onClick="alpha"
+        android:text="淡入淡出" />
+
+    <!-- 利用软件自带的图片进行测试 -->
+    <ImageView
+        android:id="@+id/ivPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@android:drawable/btn_star_big_off" />
+
+    <!-- 缩放动画按钮直接调用Activity定义的Scale()方法 -->
+    <Button
+        android:id="@+id/btnScale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ivPic"
+        android:layout_alignBottom="@+id/btnAlpha"
+        android:onClick="Scale"
+        android:text="缩放" />
+
+    <!-- 旋转动画按钮直接调用Activity定义的Rotate()方法 -->
+    <Button
+        android:id="@+id/btnRotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnScale"
+        android:layout_alignBottom="@+id/btnScale"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/btnScale"
+        android:onClick="Rotate"
+        android:text="旋转" />
+
+    <!-- 平移动画按钮直接调用Activity定义的Translate()方法 -->
+    <Button
+        android:id="@+id/btnTranslate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAlpha"
+        android:layout_alignLeft="@+id/btnAlpha"
+        android:layout_marginTop="18dp"
+        android:onClick="Translate"
+        android:text="平移" />
+
+    <!-- 组合动画按钮直接调用Activity定义的Combo()方法 -->
+    <Button
+        android:id="@+id/btnCombo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnTranslate"
+        android:layout_alignRight="@+id/ivPic"
+        android:layout_alignBottom="@+id/btnTranslate"
+        android:onClick="Combo"
+        android:text="组合动画" />
+
+
+</LinearLayout>
