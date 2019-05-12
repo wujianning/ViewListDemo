@@ -41,7 +41,7 @@ public class LayoutShowHiddenActivity extends AppCompatActivity {
      */
 
     private void initView() {
-        mainanimation = AnimationUtils.loadAnimation(this, R.anim.main_in);
+        mainanimation = AnimationUtils.loadAnimation(this, R.anim.anim_translate);
         courselayout = (RelativeLayout) findViewById(R.id.activity_indextab_courselayout);
         positionlayout = (RelativeLayout) findViewById(R.id.activity_indextab_positionlayout);
         elitelayout = (RelativeLayout) findViewById(R.id.activity_indextab_elitelayout);

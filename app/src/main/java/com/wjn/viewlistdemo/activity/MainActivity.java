@@ -7,7 +7,10 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.wjn.viewlistdemo.R;
+import com.wjn.viewlistdemo.activity.attribute.AnimationDrawableActivity;
+import com.wjn.viewlistdemo.activity.attribute.AnimationDrawableActivitys;
 import com.wjn.viewlistdemo.activity.layout.LayoutShowHiddenActivity;
+import com.wjn.viewlistdemo.activity.layout.LayoutShowHiddenActivitys;
 import com.wjn.viewlistdemo.activity.recyclerview.RecyclerViewActivity;
 import com.wjn.viewlistdemo.activity.tablayout.TabLayoutActivity;
 import com.wjn.viewlistdemo.activity.textview.TextViewActivity;
@@ -86,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //布局显示隐藏动画
+        //布局显示隐藏动画1
         TextView textView4 = findViewById(R.id.activity_main_textview4);
         textView4.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,6 +99,35 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //布局显示隐藏动画2
+        TextView textView5 = findViewById(R.id.activity_main_textview5);
+        textView5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, LayoutShowHiddenActivitys.class);
+                startActivity(intent);
+            }
+        });
+
+        //属性动画ValueAnimator
+        TextView textView6 = findViewById(R.id.activity_main_textview6);
+        textView6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AnimationDrawableActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //属性动画之ObjectAnimator
+        TextView textView7 = findViewById(R.id.activity_main_textview7);
+        textView7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AnimationDrawableActivitys.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }

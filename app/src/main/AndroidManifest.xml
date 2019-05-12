@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.viewpagerfragment.MainVFActivity"></activity>
+        <activity android:name=".activity.attribute.AnimationDrawableActivity"/>
+        <activity android:name=".activity.attribute.AnimationDrawableActivitys"/>
+        <activity android:name=".activity.viewpagerfragment.MainVFActivity" />
         <activity android:name=".activity.recyclerview.RecyclerViewActivity" />
         <activity android:name=".activity.textview.TextViewRollingActivity" />
         <activity android:name=".activity.textview.TextViewMaxActivity" />
@@ -18,6 +20,7 @@
         <activity android:name=".activity.viewpager2tablayout.ViewPager2Activity" />
         <activity android:name=".activity.viewpagertablayout.ViewPagerTabLayoutActivity" />
         <activity android:name=".activity.layout.LayoutShowHiddenActivity" />
+        <activity android:name=".activity.layout.LayoutShowHiddenActivitys" />
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
