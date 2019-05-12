@@ -83,7 +83,16 @@ public class RecyclerViewActivity extends AppCompatActivity {
         //2.设置LinearLayoutManager ListView
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         //3.设置ItemAnimator
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
+//        recyclerView.setItemAnimator(new DefaultItemAnimator());//默认
+//        recyclerView.setItemAnimator(new RotateItemAnimator());//旋转
+//        recyclerView.setItemAnimator(new FadeItemAnimator());//淡入淡出
+//        recyclerView.setItemAnimator(new SlideItemAnimator());//平移
+        ScaleItemAnimator scaleItemAnimator=new ScaleItemAnimator();
+        scaleItemAnimator.setAddDuration(2000);
+        scaleItemAnimator.setMoveDuration(2000);
+        scaleItemAnimator.setChangeDuration(2000);
+        scaleItemAnimator.setRemoveDuration(2000);
+        recyclerView.setItemAnimator(scaleItemAnimator);//缩放
         //4.设置固定大小
         recyclerView.setHasFixedSize(true);
         adapter = new MyRecycleViewAdapter(this, list);

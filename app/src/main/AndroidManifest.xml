@@ -17,6 +17,7 @@
         <activity android:name=".activity.tablayout.TabLayoutActivity" />
         <activity android:name=".activity.viewpager2tablayout.ViewPager2Activity" />
         <activity android:name=".activity.viewpagertablayout.ViewPagerTabLayoutActivity" />
+        <activity android:name=".activity.layout.LayoutShowHiddenActivity" />
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

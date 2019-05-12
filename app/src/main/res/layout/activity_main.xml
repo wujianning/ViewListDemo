@@ -87,6 +87,16 @@
                 android:textColor="#FFFFFF"
                 android:gravity="center"/>
 
+            <TextView
+                android:id="@+id/activity_main_textview4"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/colorPrimary"
+                android:layout_margin="10dp"
+                android:text="布局显示隐藏动画"
+                android:textColor="#FFFFFF"
+                android:gravity="center"/>
+
         </LinearLayout>
 
     </ScrollView>

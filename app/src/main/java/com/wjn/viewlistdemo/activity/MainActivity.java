@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.wjn.viewlistdemo.R;
+import com.wjn.viewlistdemo.activity.layout.LayoutShowHiddenActivity;
 import com.wjn.viewlistdemo.activity.recyclerview.RecyclerViewActivity;
 import com.wjn.viewlistdemo.activity.tablayout.TabLayoutActivity;
 import com.wjn.viewlistdemo.activity.textview.TextViewActivity;
@@ -81,6 +82,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, MainVFActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //布局显示隐藏动画
+        TextView textView4 = findViewById(R.id.activity_main_textview4);
+        textView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, LayoutShowHiddenActivity.class);
                 startActivity(intent);
             }
         });

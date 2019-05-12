@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="布局显示隐藏动画"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/activity_indextab_typelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <RelativeLayout
+            android:id="@+id/activity_indextab_courselayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/activity_indextab_courseiv"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/index_topcourse"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/activity_indextab_coursetv"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@+id/activity_indextab_courseiv"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="校企课程"
+                android:textColor="#797979"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_indextab_positionlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/activity_indextab_positioniv"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/index_topposition"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/activity_indextab_positiontv"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@+id/activity_indextab_positioniv"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="校企职位"
+                android:textColor="#797979"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_indextab_elitelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/activity_indextab_eliteiv"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/index_topanswer"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/activity_indextab_elitetv"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@+id/activity_indextab_eliteiv"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="精英问答"
+                android:textColor="#797979"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_indextab_projectlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/activity_indextab_projectiv"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/index_topprogect"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/activity_indextab_projecttv"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@+id/activity_indextab_projectiv"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="众包项目"
+                android:textColor="#797979"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_indextab_typelayout2"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/activity_indextab_typelayout1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <RelativeLayout
+            android:id="@+id/activity_indextab_hotlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/activity_indextab_hotiv"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/index_tophot"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/activity_indextab_hottv"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@+id/activity_indextab_hotiv"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="热门精华"
+                android:textColor="#797979"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_indextab_guidelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/activity_indextab_guideiv"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/index_topnews"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/activity_indextab_guidetv"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@+id/activity_indextab_guideiv"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="新手指南"
+                android:textColor="#797979"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_indextab_squarelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/activity_indextab_squareiv"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/index_topsquare"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/activity_indextab_squaretv"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@+id/activity_indextab_squareiv"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="活动广场"
+                android:textColor="#797979"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_indextab_huaweilayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/activity_indextab_huaweiiv"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/index_tophuawei"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/activity_indextab_huaweitv"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@+id/activity_indextab_huaweiiv"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="华为专区"
+                android:textColor="#797979"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
