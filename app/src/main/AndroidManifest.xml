@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.attribute.AnimationDrawableActivity"/>
-        <activity android:name=".activity.attribute.AnimationDrawableActivitys"/>
+        <activity android:name=".activity.tts.nativetts.NativeTTSActivity"></activity>
+        <activity android:name=".activity.attribute.AnimationDrawableActivity" />
+        <activity android:name=".activity.attribute.AnimationDrawableActivitys" />
         <activity android:name=".activity.viewpagerfragment.MainVFActivity" />
         <activity android:name=".activity.recyclerview.RecyclerViewActivity" />
         <activity android:name=".activity.textview.TextViewRollingActivity" />

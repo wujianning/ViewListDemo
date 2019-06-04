@@ -16,6 +16,7 @@ import com.wjn.viewlistdemo.activity.tablayout.TabLayoutActivity;
 import com.wjn.viewlistdemo.activity.textview.TextViewActivity;
 import com.wjn.viewlistdemo.activity.textview.TextViewMaxActivity;
 import com.wjn.viewlistdemo.activity.textview.TextViewRollingActivity;
+import com.wjn.viewlistdemo.activity.tts.nativetts.NativeTTSActivity;
 import com.wjn.viewlistdemo.activity.viewpagerfragment.MainVFActivity;
 import com.wjn.viewlistdemo.activity.viewpagertablayout.ViewPagerTabLayoutActivity;
 import com.wjn.viewlistdemo.utils.StatusBarUtil;
@@ -125,6 +126,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, AnimationDrawableActivitys.class);
+                startActivity(intent);
+            }
+        });
+
+        //Android原生TTS
+        TextView textView8 = findViewById(R.id.activity_main_textview8);
+        textView8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, NativeTTSActivity.class);
                 startActivity(intent);
             }
         });
