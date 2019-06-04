@@ -45,7 +45,7 @@ public class NativeTTSActivity extends AppCompatActivity {
             }
         });
 
-        Button button = findViewById(R.id.button1);
+        button = findViewById(R.id.button1);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
